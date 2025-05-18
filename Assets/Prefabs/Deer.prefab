@@ -93,11 +93,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c60f185158cd98c4baa347b8ec166ed3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: 3
+  Health: 1
   IsDead: 0
   _minChangeTargetDistance: 2.5
   _animator: {fileID: 4533612151548535083}
   playerSeeDistance: 12
+  attackDistance: 0
+  attackDelay: 0
+  _type: 0
+  IsClaped: 0
 --- !u!54 &3682403392592844699
 Rigidbody:
   m_ObjectHideFlags: 0

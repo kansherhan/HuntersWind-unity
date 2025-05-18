@@ -93,7 +93,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c60f185158cd98c4baa347b8ec166ed3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Health: 4
+  Health: 3
   IsDead: 0
   _minChangeTargetDistance: 2.5
   _animator: {fileID: 3318030256883226910}

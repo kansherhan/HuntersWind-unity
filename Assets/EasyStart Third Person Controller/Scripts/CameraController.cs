@@ -2,6 +2,8 @@
 
 public class CameraController : MonoBehaviour
 {
+    public static CameraController instance;
+
     [Tooltip("Enable to move the camera by holding the right mouse button. Does not work with joysticks.")]
     public bool clickToMoveCamera = false;
     [Tooltip("Enable zoom in/out when scrolling the mouse wheel. Does not work with joysticks.")]
@@ -20,6 +22,11 @@ public class CameraController : MonoBehaviour
     public float offsetDistanceX;
 
     public Transform Player;
+
+    private void Awake()
+    {
+        instance = this;
+    }
 
     private void Start()
     {

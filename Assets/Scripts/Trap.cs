@@ -25,9 +25,15 @@ public class Trap : MonoBehaviour
 
             var animalAgent = other.GetComponent<NavMeshAgent>();
             animalAgent.speed = 0f;
+            animalAgent.velocity = Vector3.zero;
             animal = other.gameObject;
             var animalComponent = other.GetComponent<Animal>();
             animalComponent.IsClaped = true;
+
+            var position = transform.position;
+            position.y += 1f;
+
+            other.transform.position = position; 
         }
         else if (other.tag == Tags.Player && (isClap == false || !animal.activeInHierarchy))
         {

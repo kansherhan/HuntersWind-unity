@@ -2165,6 +2165,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: CameraController
       objectReference: {fileID: 0}
+    - target: {fileID: 1011312494259777056, guid: 0090731b51e488b43a6a7307adf4cfef, type: 3}
+      propertyPath: m_TagString
+      value: MainCamera
+      objectReference: {fileID: 0}
     - target: {fileID: 4504772651233487798, guid: 0090731b51e488b43a6a7307adf4cfef, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.001
@@ -2624,7 +2628,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9319affcf1bb5f74c89f39e4054ba458, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AnimalCount: 7
+  AnimalCount: 10
   AnimalPrefabs:
   - {fileID: 719071589684854218, guid: c34281d6fac9f114e943d9569a119949, type: 3}
   - {fileID: 719071589684854218, guid: dfd5bdadadb111942b9fa892530935c3, type: 3}
@@ -4918,6 +4922,10 @@ PrefabInstance:
       propertyPath: _cameraController
       value: 
       objectReference: {fileID: 999138054}
+    - target: {fileID: 839567768543051516, guid: c7163d9f87648a54fb40ff0d00820347, type: 3}
+      propertyPath: _attackClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 13c30da4c0b29c54282150c8420aae3a, type: 3}
     - target: {fileID: 6558235730668287696, guid: c7163d9f87648a54fb40ff0d00820347, type: 3}
       propertyPath: m_Name
       value: Player

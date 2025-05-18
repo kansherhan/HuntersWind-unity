@@ -20,6 +20,8 @@ public class ThirdPersonController : MonoBehaviour
     [SerializeField] public float attackDistance = 5f;
     [SerializeField] private LayerMask _attackLayerMask;
 
+    [SerializeField] private AudioClip _attackClip;
+
     // Player states
     bool isJumping = false;
     bool isSprinting = false;
@@ -201,7 +203,11 @@ public class ThirdPersonController : MonoBehaviour
 
     private IEnumerator attack()
     {
-        yield return new WaitForSeconds(attackDelay);
+        yield return new WaitForSeconds(0.5f);
+
+        AudioSource.PlayClipAtPoint(_attackClip, transform.position, 0.5f);
+
+        yield return new WaitForSeconds(attackDelay - 0.5f);
 
         Collider[] colliders = Physics.OverlapSphere(transform.position, attackDistance, _attackLayerMask);
 
